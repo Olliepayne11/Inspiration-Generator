@@ -1,0 +1,62 @@
+body {
+    margin: 0px 0px;
+    background-color:darkslateblue
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 180px;
+    margin-bottom: 90px;
+}
+
+input {
+    height: 80px;
+    width: 80%;
+    border: solid blue 3px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.click-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+
+button {
+    height: 50px;
+    width: 60%;
+    box-shadow: 3px 3px black;
+    background-color: darkslateblue;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+button:active {
+    margin-top: 3px;
+    box-shadow: none;
+}
