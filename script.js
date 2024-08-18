@@ -7,19 +7,21 @@ let randomNum = Math.floor(Math.random() * 4);
 
 let textBox = document.getElementById('text-box-input');
 
-window.onload = function randomMessage(messages) {
+function randomMessage(messages) {
 
 if (randomNum === 0) {
-    textBox.value = messages[0];
+    return textBox.value = messages[0];
 }
 else if (randomNum === 1) {
-    textBox.value = messages[1];
+    return textBox.value = messages[1];
 }
 else if (randomNum === 2) {
-    textBox.value = messages[2];
+    return textBox.value = messages[2];
 }
 else if (randomNum === 3) {
-    textBox.value = messages[3];
+    return textBox.value = messages[3];
 }
 
 };
+
+randomMessage(messages);
