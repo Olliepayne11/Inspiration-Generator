@@ -1,27 +1,33 @@
-const messages = ['Learning is never done without error, and defeat.', 
-    'Your self-worth is determined by you.', 
-    'Nothing is impossible.', 
-    'Attitude is a little thing that makes a big difference.'];
+const textBox = document.querySelector("#text-box-input");
+const clickButton = document.querySelector("#actual-button");
 
-let randomNum = Math.floor(Math.random() * 4);
+const messages = ["Spread love everywhere you go.", 
+    "Extraordinary things are always hiding in places people never think to look.",
+    "Don't waste a minute not being happy",
+    "It is never too late to be what might have been",
+    "Nothing is impossible.",
+    "Attitude is a little thing that makes a big difference"];
 
-let textBox = document.getElementById('text-box-input');
+function changeText() {
+    
+    let randomNum = Math.floor(Math.random() * 6);
 
-function randomMessage(messages) {
-
-if (randomNum === 0) {
-    return textBox.value = messages[0];
+    if (randomNum === 0) {
+        textBox.innerHTML = messages[0];
+    }
+    else if (randomNum === 1) {
+        textBox.innerHTML = messages[1];
+    }
+    else if (randomNum === 2) {
+        textBox.innerHTML = messages[2];
+    }
+    else if (randomNum === 3) {
+        textBox.innerHTML = messages[3];
+    }
+    else if (randomNum === 4) {
+        textBox.innerHTML = messages[4];
+    }
+    else if (randomNum === 5) {
+        textBox.innerHTML = messages[5];
+    }
 }
-else if (randomNum === 1) {
-    return textBox.value = messages[1];
-}
-else if (randomNum === 2) {
-    return textBox.value = messages[2];
-}
-else if (randomNum === 3) {
-    return textBox.value = messages[3];
-}
-
-};
-
-randomMessage(messages);

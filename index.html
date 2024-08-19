@@ -3,6 +3,7 @@
     <head>
         <title>Inspirational Quotes Generator</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -10,10 +11,10 @@
         </header>
         <main>
             <div class="text-box">
-                <input id="text-box-input" value="Inspirational Quotes Will Appear Here!" type="text" readonly>
+                <p id="text-box-input">Insiprational Quotes Will Appear Here!</p>
             </div>
             <div class="click-button">
-                <button id="actual-button" onclick="randomMessage()">Click Me To Hear Some Inspiration!</button>
+                <button id="actual-button" onclick="changeText()">Click Me To Hear Some Inspiration!</button>
             </div>
         </main>
     </body>
