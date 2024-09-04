@@ -30,4 +30,5 @@ function changeText() {
     else if (randomNum === 5) {
         textBox.innerHTML = messages[5];
     }
+
 }
